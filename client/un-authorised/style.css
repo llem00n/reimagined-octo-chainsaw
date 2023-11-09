@@ -1,0 +1,48 @@
+html, body, .outer {
+  height: 100%;
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+#heading {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#password {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#password.error {
+  border-bottom-color: red;
+  color: red;
+}
+
+#submit {
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color:#fff;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#submit:focus {
+  background-color: #222;
+  color: #fff;
+}
